@@ -25,7 +25,6 @@ public class SQLInjectionServlet extends AbstractServlet {
 
         try {
             String name = StringUtils.trim(req.getParameter("name"));
-            String password = StringUtils.trim(req.getParameter("password"));
             Locale locale = req.getLocale();
             StringBuilder bodyHtml = new StringBuilder();
 
