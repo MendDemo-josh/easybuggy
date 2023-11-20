@@ -3,7 +3,7 @@
     "configMode": "AUTO",
     "configExternalURL": "",
     "projectToken": "",
-    "baseBranches": ["JoshDevBranch"]
+    "baseBranches": [""]
   },
   "scanSettingsSAST": {
     "enableScan": true,
