@@ -5,7 +5,7 @@
     "projectToken": "",
     "enableIaC": true,
     "enableLicenseViolations": true,
-    "baseBranches": ["JoshDevBranch", "master"]
+    "baseBranches": ["JoshDevBranch", "master","DevBranch2"]
   },
   "scanSettingsSAST": {
     "enableScan": true,
