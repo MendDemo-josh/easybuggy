@@ -5,6 +5,7 @@
     "projectToken": "",
     "enableIaC": true,
     "enableLicenseViolations": true,
+    "enableReachability": true,
     "baseBranches": ["JoshDevBranch", "master","DevBranch2"]
   },
   "scanSettingsSAST": {
@@ -17,6 +18,7 @@
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
     "displayMode": "diff",
+    "strictMode": "warning",
     "useMendCheckNames": true
   },
   "issueSettings": {
