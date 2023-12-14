@@ -6,7 +6,7 @@
     "enableIaC": true,
     "enableLicenseViolations": true,
     "enableReachability": true,
-    "baseBranches": ["JoshDevBranch", "master","DevBranch2"]
+    "baseBranches": []
   },
   "scanSettingsSAST": {
     "enableScan": true,
