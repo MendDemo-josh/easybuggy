@@ -1,0 +1,24 @@
+name: "Release Pipeline"
+on:
+    push:
+        branches:
+            - release*
+            
+    pull_request:
+        branches:
+            - release*
+
+ 
+jobs:
+    build:
+            - name: Mend CLI Scan on Release
+              if: startsWith(github.ref, 'refs/heads/v') && github.event_name == 'push'
+              env:
+                MEND_EMAIL: ${{secrets.MEND_EMAIL}}
+                MEND_USER_KEY: ${{secrets.MEND_USER_KEY}}
+                MEND_URL: https://saas.mend.io
+              run: |
+                echo Downloading Mend CLI
+                curl -LJO https://downloads.mend.io/production/unified/latest/linux_amd64/mend && chmod +x mend
+                echo "Start Mend release scan"
+                ./mend code -s *//GH_${{github.event.repository.name}}//GH_${{github.event.repository.name}}_${{github.ref_name}} -j 2 --js 
