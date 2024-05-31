@@ -11,7 +11,7 @@
 
 # If you are NOT using a service user, and have multiple organizations, don't forget to call the scope -s parameter to set the organization
 
-name: Mend CLI SAST PR Scan
+name: Mend CLI SAST Scan per push to Release Branch
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
         MEND_EMAIL: ${{secrets.MEND_EMAIL}}
         MEND_USER_KEY: ${{secrets.MEND_USER_KEY}}
         MEND_URL: https://saas.mend.io
-        MEND_SAST_THRESHOLD_ONLY_NEW: true
+        #MEND_SAST_THRESHOLD_ONLY_NEW: true
         # Set diff thresholds from the base scan
         # MEND_SAST_THRESHOLD_HIGH: 1
         # MEND_SAST_THRESHOLD_MEDIUM: 1
@@ -38,4 +38,4 @@ jobs:
         echo Downloading Mend CLI
         curl https://downloads.mend.io/cli/linux_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
         echo Run Mend code scan
-        mend code -s "*//*//${{github.event.repository.name}}_${{github.ref_name}}_{{github.head_ref}}"
+        mend code -s "*//*//${{github.event.repository.name}}_${{github.ref_name}}"
