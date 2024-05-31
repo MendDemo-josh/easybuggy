@@ -13,7 +13,7 @@ import org.t246osslab.easybuggy.core.utils.ApplicationUtils;
 import org.t246osslab.easybuggy.core.utils.Closer;
 
 /**
- * Database client to provide database connections.
+ * Database client to provide database connections. TESTJOSH
  */
 public final class DBClient {
 
