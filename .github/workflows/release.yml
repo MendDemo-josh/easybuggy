@@ -11,7 +11,7 @@ on:
  
 jobs:
     build:
-            - name: Mend CLI Scan on Release
+        name: Mend CLI Scan on Release
               if: startsWith(github.ref, 'refs/heads/v') && github.event_name == 'push'
               env:
                 MEND_EMAIL: ${{secrets.MEND_EMAIL}}
