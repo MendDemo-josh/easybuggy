@@ -13,7 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Embedded Apache Directory Server.
+ * Embedded Apache Directory Server - TestJosh
  */
 public final class EmbeddedADS {
 
