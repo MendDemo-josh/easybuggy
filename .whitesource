@@ -12,7 +12,7 @@
     "enableScan": true,
     "scanPullRequests": true,
     "incrementalScan": true,
-    "baseBranches": [],
+    "baseBranches": ["JoshNewBranch"],
     "snippetSize": 10
   },
   "checkRunSettings": {
