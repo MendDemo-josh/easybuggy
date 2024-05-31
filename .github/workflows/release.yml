@@ -16,7 +16,7 @@ name: Mend CLI SAST PR Scan
 on:
   pull_request:
     branches:
-      - main
+      - release*
 
 jobs:
   build:
