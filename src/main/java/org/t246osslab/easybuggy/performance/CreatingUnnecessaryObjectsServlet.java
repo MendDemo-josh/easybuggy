@@ -15,7 +15,7 @@ import org.t246osslab.easybuggy.core.servlets.AbstractServlet;
 @WebServlet(urlPatterns = { "/createobjects" })
 public class CreatingUnnecessaryObjectsServlet extends AbstractServlet {
 
-    @Override TESTJOSH
+    @Override
     protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         Locale locale = req.getLocale();
         String strNumber = req.getParameter("number");
